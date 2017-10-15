@@ -8,9 +8,12 @@ import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedraw
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { DrawerComponent } from "./shared/drawer/drawer.component";
+import { HomeComponent } from './home/home.component';
 
 import { DishService } from './services/dish.service';
-import { ProcessHttpmsgService } from './services/process-httpmsg';
+import { PromotionService } from './services/promotion.service';
+import { LeaderService } from './services/leader.service';
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import { baseURL } from './shared/baseurl';
 
@@ -34,12 +37,15 @@ import { baseURL } from './shared/baseurl';
         AppComponent,
         MenuComponent,
         DishdetailComponent,
-        DrawerComponent
+        DrawerComponent,
+        HomeComponent
     ],
     providers: [
         DishService,
-        ProcessHttpmsgService,
-        { provide: 'BaseURL', useValue: baseURL}
+        ProcessHTTPMsgService,
+        { provide: 'BaseURL', useValue: baseURL},
+        LeaderService,
+        PromotionService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

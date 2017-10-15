@@ -10,7 +10,7 @@ import 'rxjs/add/observable/throw';
   for more info on providers and Angular 2 DI.
 */
 @Injectable()
-export class ProcessHttpmsgService {
+export class ProcessHTTPMsgService {
 
   constructor(public http: Http) {
     console.log('Hello ProcessHttpmsgProvider Provider');
