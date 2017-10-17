@@ -10,8 +10,8 @@ import { DrawerPage } from '../shared/drawer/drawer.page';
 
 @Component({
   selector: 'app-home',
-    moduleId: module.id,
-    templateUrl: './home.component.html'
+  moduleId: module.id,
+  templateUrl: './home.component.html'
 })
 export class HomeComponent extends DrawerPage implements OnInit {
 

@@ -5,7 +5,7 @@ import { DrawerPage } from '../shared/drawer/drawer.page';
 
 @Component({
   selector: 'app-menu',
-    moduleId: module.id,
+  moduleId: module.id,
   templateUrl: './menu.component.html'
 })
 
