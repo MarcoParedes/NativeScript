@@ -4,8 +4,8 @@ import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { NativeScriptUISideDrawerModule } from "nativescript-telerik-ui/sidedrawer/angular";
-import { NativeScriptUIListViewModule } from "nativescript-telerik-ui/listview/angular";
 import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
+import { NativeScriptUIListViewModule } from "nativescript-telerik-ui/listview/angular";
 
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
