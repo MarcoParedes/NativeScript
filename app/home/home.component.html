@@ -1,5 +1,6 @@
 <ActionBar title="Home" class="action-bar">
-</ActionBar>
+    <NavigationButton text="Menu" icon="res://ic_drawer" (tap)="openDrawer()"></NavigationButton>
+</ActionBar> 
 <RadSideDrawer #drawerComponent tkToggleNavButton showOverNavigation="true">
     <ScrollView tkDrawerContent class="sidedrawer-left">
         <StackLayout horizontalAlign="left">
