@@ -8,16 +8,19 @@
          </StackLayout> 
     </ScrollView> 
     <StackLayout tkMainContent class="page"> 
-       <StackLayout class="m-5 p-10 border"> 
+        <StackLayout class="m-5 p-10 border"> 
             <Label class="h3" text="Contact Information"></Label> 
-            <StackLayout class="p-20" orientation="vertical"> 
-                <Label class="body" text="121, Clear Water Bay Road"></Label> 
-                <Label class="body" text="Clear Water Bay, Kowloon"></Label> 
-                <Label class="body" text="HONG KONG"></Label> 
-                <Label class="body" text="Tel: +852 1234 5678"></Label> 
-                <Label class="body" text="Fax: +852 8765 4321"></Label> 
-                <Label class="body" text="Email:confusion@food.net"></Label> 
-          </StackLayout> 
-     </StackLayout> 
- </StackLayout> 
+            <label class="body text-primary" text="
+            121, Clear Water Bay Road
+            Clear Water Bay, Kowloon
+            HONG KONG
+            Tel: +852 1234 5678
+            Fax: +852 8765 4321
+            Email:confusion@food.net" textWrap="true"></label>
+            <GridLayout orientation="horizontal" rows="*" columns="*, *" class="m-t-20">
+                <Button row="0" col="0" [text]="('fa-phone' | fonticon) + ' Call'" class="btn btn-rounded-sm btn-outline no-border fa "></Button>
+                <Button row="0" col="1" [text]="('fa-envelope-o' | fonticon) + ' Email'" class="btn btn-rounded-sm btn-outline no-border fa" (tap)="sendEmail()"></Button>
+            </GridLayout>
+        </StackLayout> 
+    </StackLayout> 
 </RadSideDrawer>
